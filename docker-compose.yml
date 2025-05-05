@@ -1,10 +1,17 @@
 services:
   web:
     image: nginx:1.27-alpine
+    volumes:
+      - "./etc/web/:/etc/nginx"
+      - "./:/app"
     ports:
-      - "80:80"
+      - "${WEB_LISTEN_IP:-0.0.0.0}:${WEB_PORT:-80}:${WEB_INTERNAL_PORT:-80}"
   app:
     image: ghcr.io/old-home/php-fpm
+    user: ${GID}:${UID}
+    volumes:
+      - "./etc/app/:/usr/local/etc/"
+      - "./:/app"
   db:
     image: postgres:17-alpine
   cache:

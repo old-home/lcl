@@ -3,3 +3,5 @@ services:
     image: nginx:1.27-alpine
     ports:
       - "80:80"
+  app:
+    image: ghcr.io/old-home/php-fpm

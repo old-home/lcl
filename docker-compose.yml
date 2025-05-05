@@ -5,3 +5,7 @@ services:
       - "80:80"
   app:
     image: ghcr.io/old-home/php-fpm
+  db:
+    image: postgres:17-alpine
+  cache:
+    image: redis:7.4-alpine

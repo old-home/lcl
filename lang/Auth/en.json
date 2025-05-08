@@ -1,0 +1,23 @@
+{
+  "login.title": "Login",
+  "login.email": "Email",
+  "login.password": "Password",
+  "login.submit": "Sign In",
+  "login.registerLink": "Don't have an account? Register here",
+  "login.rootAccountId": "Root Account ID",
+  "login.iamAccount": "IAM Account",
+  "login.switchToRootMode": "Login with Root Account ID",
+  "login.switchToEmailMode": "Login with Email",
+
+  "register.title": "User Registration",
+  "register.name": "Full Name",
+  "register.email": "Email",
+  "register.password": "Password",
+  "register.confirmPassword": "Confirm Password",
+  "register.submit": "Register",
+  "register.loginLink": "Already have an account? Login here",
+
+  "form.required": "This field is required",
+  "form.emailInvalid": "Please enter a valid email address",
+  "form.passwordMismatch": "Passwords do not match"
+}

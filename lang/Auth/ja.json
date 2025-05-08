@@ -1,0 +1,23 @@
+{
+  "login.title": "ログイン",
+  "login.email": "メールアドレス",
+  "login.password": "パスワード",
+  "login.submit": "サインイン",
+  "login.registerLink": "アカウントをお持ちでない方はこちら",
+  "login.rootAccountId": "ルートアカウントID",
+  "login.iamAccount": "IAMアカウント",
+  "login.switchToRootMode": "ルートアカウントIDでログイン",
+  "login.switchToEmailMode": "メールアドレスでログイン",
+
+  "register.title": "ユーザー登録",
+  "register.name": "氏名",
+  "register.email": "メールアドレス",
+  "register.password": "パスワード",
+  "register.confirmPassword": "パスワード（確認）",
+  "register.submit": "登録",
+  "register.loginLink": "既にアカウントをお持ちの方はこちら",
+
+  "form.required": "この項目は必須です",
+  "form.emailInvalid": "有効なメールアドレスを入力してください",
+  "form.passwordMismatch": "パスワードが一致しません"
+}

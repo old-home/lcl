@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="com.example.lcl" target="21" />
+      <module name="com.example.lcl.main" target="21" />
+      <module name="com.example.lcl.test" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="com.example.lcl" options="-parameters" />
+      <module name="com.example.lcl.main" options="-parameters" />
+      <module name="com.example.lcl.test" options="-parameters" />
+      <module name="com.graywings.lcl" options="-parameters" />
+      <module name="com.graywings.lcl.main" options="-parameters" />
+      <module name="com.graywings.lcl.test" options="-parameters" />
+    </option>
+  </component>
+</project>

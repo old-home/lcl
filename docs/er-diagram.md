@@ -15,7 +15,14 @@ erDiagram
     bigint account_id
     string name
   }
-  
+
+  refresh_tokens {
+    string token PK
+    bigint account_id FK
+    string user_id FK
+    timestamp expired_at
+  }
+
   users_groups {
     id string PK
     bigint account_id
@@ -74,6 +81,8 @@ erDiagram
   
   accounts ||--o{ users : ""
   users ||--o{ users_groups : ""
+  accounts ||--o| refresh_tokens : ""
+  users ||--o| refresh_tokens: ""
   groups ||--o{ users_groups : ""
   users ||--o{ users_roles: ""
   roles ||--o{ users_roles: ""

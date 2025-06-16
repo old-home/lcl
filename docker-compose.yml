@@ -5,10 +5,9 @@ services:
       - "./etc/web/:/etc/nginx"
       - "./:/app"
     ports:
-      - "${WEB_LISTEN_IP:-0.0.0.0}:${WEB_PORT:-80}:${WEB_INTERNAL_PORT:-80}"
+      - ":${WEB_PORT:-80}:${WEB_INTERNAL_PORT:-80}"
   app:
     image: openjdk:21-ea
-    build: ./containers/app
     user: ${GID}:${UID}
     volumes:
       - "./etc/app/:/usr/local/etc/"
@@ -18,7 +17,7 @@ services:
     entrypoint:
       - java
       - -jar
-      - lcl-backend-0.0.1-SNAPSHOT.jar
+      - lcl-0.0.1-SNAPSHOT.jar
       - --debug
   db:
     image: postgres:17-alpine

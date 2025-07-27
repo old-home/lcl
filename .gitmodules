@@ -1,7 +1,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = git@github.com:old-home/lcl-frontend.git
-
-[submodule "lcl-backend"]
+[submodule "backend"]
 	path = backend
 	url = git@github.com:old-home/lcl-backend.git
